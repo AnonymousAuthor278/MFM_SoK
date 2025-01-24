@@ -32,9 +32,9 @@ Building on this perspective, information theory provides a robust framework for
 
 Specifically, we adapt the Shannon–Hartley theorem, which quantifies the maximum rate at which information can be transmitted over a communication channel (e.g., the model) subject to noise (e.g., threats), for analyzing multimodal safety and security.
 
-\[
-C = B \log_2 \left( 1 + \frac{S}{N} \right)
-\]
+<p align="left">
+  <img src="sh.png" alt="shannon-hartley" width="200">
+</p>
 
 where:
 - \(C\): Channel capacity -> represents the model's ability to effectively learn from and predict based on multimodal inputs, which is essential for assessing how well the model transmits meaningful information.
