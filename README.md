@@ -6,3 +6,14 @@ Multimodal foundation models (MFMs) combine diverse data modalities, driving adv
   <br>
   <em>An overview of our SoK on unifying cybersecurity and cybersafety of multimodal foundation models.</em>
 </p>
+
+## Multimodal Foundation Models
+In unimodal learning, the model maps input features to output labels within a discrete feature space, focusing on patterns within one data type. It extracts features, converts them into vectors, and then learns the mapping between vectors and labels.
+
+In contrast, multimodal learning involves mapping continuous feature spaces across different modalities, which can be understood as extending the discrete output space of unimodal learning into a continuous space. Instead of directly mapping the spaces, multimodal models create unified representations in an alignment space, linking feature spaces from different data types. 
+
+<p align="center">
+  <img src="single_multi_ml.png" alt="single_multi" width="400">
+  <br>
+  <em>An illustration of single- and multimodal learning.</em>
+</p>
