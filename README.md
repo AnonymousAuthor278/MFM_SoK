@@ -19,7 +19,7 @@ In contrast, multimodal learning involves mapping continuous feature spaces acro
 </p>
 
 <p align="center">
-  <img src="models.png" alt="models" width="500">
+  <img src="models.PNG" alt="models" width="500">
   <br>
   <em>Examples of multimodal large models.</em>
 </p>
