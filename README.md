@@ -2,7 +2,7 @@
 Multimodal foundation models (MFMs) combine diverse data modalities, driving advancements in AI across various applications but introducing unique safety and security challenges. This study unifies cybersafety and cybersecurity in MFMs, identifying key threats through a taxonomy grounded in information theory. By analyzing threats via channel capacity, signal, noise, and bandwidth, we offer a novel framework to integrate model safety and system security. Our analysis highlights gaps in existing defenses, such as insufficient protection for cross-modality alignment and a lack of systematic defense strategies. This work provides actionable insights to enhance the robustness and reliability of MFMs.
 
 <p align="center">
-  <img src="sok.png" alt="overview" width="400">
+  <img src="images/ok.png" alt="overview" width="400">
   <br>
   <em>An overview of our SoK on unifying cybersecurity and cybersafety of multimodal foundation models.</em>
 </p>
@@ -13,13 +13,13 @@ In unimodal learning, the model maps input features to output labels within a di
 In contrast, multimodal learning involves mapping continuous feature spaces across different modalities, which can be understood as extending the discrete output space of unimodal learning into a continuous space. Instead of directly mapping the spaces, multimodal models create unified representations in an alignment space, linking feature spaces from different data types. 
 
 <p align="center">
-  <img src="single_multi_ml.png" alt="single_multi" width="400">
+  <img src="images/single_multi_ml.png" alt="single_multi" width="400">
   <br>
   <em>An illustration of single- and multimodal learning.</em>
 </p>
 
 <p align="center">
-  <img src="models.PNG" alt="models" width="500">
+  <img src="images/models.PNG" alt="models" width="500">
   <br>
   <em>Examples of multimodal large models.</em>
 </p>
@@ -33,7 +33,7 @@ Building on this perspective, information theory provides a robust framework for
 Specifically, we adapt the Shannon–Hartley theorem, which quantifies the maximum rate at which information can be transmitted over a communication channel (e.g., the model) subject to noise (e.g., threats), for analyzing multimodal safety and security.
 
 <p align="left">
-  <img src="sh.png" alt="shannon-hartley" width="120">
+  <img src="images/sh.png" alt="shannon-hartley" width="120">
 </p>
 
 where:
@@ -56,7 +56,7 @@ From the system perspective, the information flows between various components, s
 - **Information flow between agent and system memory**  refers to how agents store, retrieve, and rely on historical data for decision-making. Attackers may target the integrity of this memory by manipulating stored information or introducing false data.
 
 <p align="center">
-  <img src="information_flow.png" alt="flow" width="400">
+  <img src="images/information_flow.png" alt="flow" width="400">
   <br>
   <em>An illustration of information flows in MFM system (represented by arrows).</em>
 </p>
@@ -64,7 +64,7 @@ From the system perspective, the information flows between various components, s
 ## Taxonomy
 
 <p align="center">
-  <img src="taxonomy.png" alt="flow" width="800">
+  <img src="images/taxonomy.png" alt="flow" width="800">
   <br>
   <em>Taxonomy of safety and security threats in MFMs.</em>
 </p>
