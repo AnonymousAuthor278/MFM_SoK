@@ -2,7 +2,7 @@
 Multimodal foundation models (MFMs) combine diverse data modalities, driving advancements in AI across various applications but introducing unique safety and security challenges. This study unifies cybersafety and cybersecurity in MFMs, identifying key threats through a taxonomy grounded in information theory. By analyzing threats via channel capacity, signal, noise, and bandwidth, we offer a novel framework to integrate model safety and system security. Our analysis highlights gaps in existing defenses, such as insufficient protection for cross-modality alignment and a lack of systematic defense strategies. This work provides actionable insights to enhance the robustness and reliability of MFMs.
 
 <p align="center">
-  <img src="images/ok.png" alt="overview" width="400">
+  <img src="images/sok.png" alt="overview" width="400">
   <br>
   <em>An overview of our SoK on unifying cybersecurity and cybersafety of multimodal foundation models.</em>
 </p>
