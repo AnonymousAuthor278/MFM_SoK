@@ -18,15 +18,8 @@ In contrast, multimodal learning involves mapping continuous feature spaces acro
   <em>An illustration of single- and multimodal learning.</em>
 </p>
 
-| **Models**             | **Typical Tasks**                                                                 | **Input Modalities**       | **Output Modalities**  |
-|-------------------------|-----------------------------------------------------------------------------------|----------------------------|-------------------------|
-| **CLIP**               | Associates images and text                                                        | Text, Image                | Embeddings             |
-| **AudioCLIP**          | Associates audio with images and text embeddings                                  | Audio, Text, Image         | Embeddings             |
-| **DALL·E**             | Text-to-image generation                                                          | Text                       | Image                  |
-| **Stable Diffusion**    | Text-to-image generation                                                          | Text                       | Image                  |
-| **Flamingo**           | Reasoning, contextual understanding                                               | Text, Image                | Text                   |
-| **BLIP**               | Image captioning, visual question answering, and image-text retrieval             | Text, Image                | Text                   |
-| **LLaVA**              | Visual question answering, image captioning, and engaging in dialogues referencing images | Text, Image                | Text                   |
-| **GPT-4**              | Visual question answering, image captioning, and engaging in dialogues referencing images | Text, Image                | Text                   |
-| **MiniGPT-4**          | Engaging in dialogues referencing images                                          | Text, Image                | Text                   |
-| **PandaGPT**           | Audio to text generation                                                          | Audio                      | Text                   |
+<p align="center">
+  <img src="models.png" alt="models" width="500">
+  <br>
+  <em>Examples of multimodal large models.</em>
+</p>
