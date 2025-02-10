@@ -24,7 +24,6 @@ from models.tokenization_bert import BertTokenizer
 
 from transformers import BertForMaskedLM
 
-import utils
 
 from attack import *
 from torchvision import transforms
@@ -259,7 +258,7 @@ def main(args, config):
     device2 = args.gpu[2]
     print(device,device2)
     # fix the seed for reproducibility
-    seed = args.seed + utils.get_rank()
+    seed = args.seed 
     torch.manual_seed(seed)
     np.random.seed(seed)
     random.seed(seed)
@@ -331,7 +330,7 @@ if __name__ == '__main__':
     parser.add_argument('--gpu', type=int, nargs='+', default=[0,1,2])
     parser.add_argument('--seed', default=42, type=int)
     parser.add_argument('--adv', default=0, type=int,
-                        help='0=clean, 1=adv text, 2=adv image, 3=adv text and adv image,')
+                        help='0=clean, 1=adv text, 2=adv image, 3=adv sep, 4=adv co, 5=adv sl')
     parser.add_argument('--alpha', default=3.0, type=float)
     parser.add_argument('--cls', action='store_true')
 
