@@ -37,10 +37,13 @@ Specifically, we adapt the Shannon–Hartley theorem, which quantifies the maxim
 </p>
 
 where:
-- \(C\): Channel capacity -> represents the model's ability to effectively learn from and predict based on multimodal inputs, which is essential for assessing how well the model transmits meaningful information.
-- \(S\): Signal power -> refers to the meaningful information that can be extracted from various modalities, such as textual features from documents, visual features from images, or auditory features from sound clips.
-- \(N\): Noise power -> refers to any irrelevant or disruptive information that can distort the intended signal, which can stem from sources such as data collection errors, sensor inaccuracies, or deliberate perturbations injected into different modalities.
-- \(B\): Bandwidth -> refers to the capacity for transmitting effective information between agents or system components, determining how information can be exchanged, which directly impacts the performance and responsiveness of each agent within the system. 
+- **\(C\): Channel capacity**  characterizes a model’s ability to reliably acquire and utilize task-relevant information. Unlike the intrinsic physical capacity defined by the Shannon–Hartley theorem, which is fixed by model architecture and parameters, we define \(C\) as the *Effective Semantic Capacity* (\(C_{\mathrm{eff}}\)). \(C_{\mathrm{eff}}\) captures the maximum rate at which a model can reliably transmit correct semantic concepts across the alignment space under a given task and input structure, and is formalized as \[C_{\mathrm{eff}}(m, x, t) = I(z; y \mid t),\] where \(t\) denotes the task, \(z\) is the task-aligned latent representation produced by model \(m\), and \(y\) is the target output. This formulation allows capacity to vary with modality, alignment quality, and attack-induced information bottlenecks.
+
+- **\(S\): Signal power** denotes the task-aligned semantic information that a model can objectively extract from an input. We define Signal as the magnitude of the input embedding’s projection onto a target concept vector in the shared latent space, where the target concept vector is produced by a clean native-modality reference input under the same task. This definition applies uniformly across modalities. Although different input structures may preserve the same human-interpretable meaning, they can induce substantially different signal strengths for the model. For example, representing text as pixels forces reliance on a less semantically efficient encoder, resulting in a reduced task-aligned Signal.
+
+- **\(N\): Noise power** includes all forms of irrelevant, non-semantic, or disruptive information that can distort the intended signal. It can originate from sensor errors, data inconsistencies, or adversarial perturbations. Noise can be external, coming from misleading or irrelevant inputs, or internal, arising from model uncertainty or inherent stochasticity in decision-making.
+
+- **\(B\): Bandwidth** characterizes the capacity of a system or agent to transmit and act upon information. Rather than raw throughput, we define Bandwidth in the system context as the *Authorized Information Pathway*, namely the effective capacity for safe, verified, and policy-compliant interactions. We operationalize this notion as the entropy of the allowed action space after system-level constraints are applied. While safety mechanisms may reduce raw throughput by discarding unauthorized inputs, they can increase Authorized Bandwidth by eliminating semantic noise and focusing information flow on valid operations. By blocking unauthorized information flows and restricting adversarial access to system resources, these constraints effectively reduce competing pathways and expand the usable bandwidth available for authorized information transmission.
 
 ## Information Flows
 
@@ -56,7 +59,7 @@ From the system perspective, the information flows between various components, s
 - **Information flow between agent and system memory**  refers to how agents store, retrieve, and rely on historical data for decision-making. Attackers may tamper with memory content to alter agent decision-making over time.
 - 
 <p align="center">
-  <img src="images/information_flows.png" alt="flow" width="400">
+  <img src="images/information_flows.png" alt="flow" width="800">
   <br>
   <em>An illustration of information flows in MFM system (represented by arrows).</em>
 </p>
