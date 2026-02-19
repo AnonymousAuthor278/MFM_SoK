@@ -67,7 +67,7 @@ From the system perspective, the information flows between various components, s
 ## Taxonomy
 
 <p align="center">
-  <img src="images/taxonomy.png" alt="flow" width="800">
+  <img src="images/tax_table.png" alt="flow" width="800">
   <br>
   <em>Taxonomy of safety and security threats in MFMs.</em>
 </p>
